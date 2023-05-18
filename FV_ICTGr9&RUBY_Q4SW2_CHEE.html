@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seatwork 2</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+ <style type="text/css">
+    body{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      text-align: center;
+  }
+  </style>
+<body background="https://i.pinimg.com/564x/a0/26/b5/a026b5306601928cd3d854b1849fb3d4.jpg">
+	<h1 style="color: #B4A0E5"><font style="font-size: 50px"><b>𝐓𝐈𝐌𝐄 𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐄𝐑</b></font></h1>
+	<img src="clockblue.png" width="360" height="370">
+	<h5 style="color: #B4A0E5">𝘈 𝘵𝘪𝘮𝘦 𝘤𝘰𝘯𝘷𝘦𝘳𝘵𝘦𝘳 𝘵𝘰 𝘢𝘷𝘰𝘪𝘥 𝘸𝘢𝘴𝘵𝘪𝘯𝘨 𝘵𝘪𝘮𝘦!</h5>
+	<hr>
+	<hr>
+<center>
+	<div>
+	 <table class="table table-stripped table-bordered table-hover">
+	<tr align="center">
+		<td><h1><b>𝐒𝐞𝐜𝐨𝐧𝐝𝐬 !</b></h1>
+			<p><input type="text" id="seconds"></p>
+			<input type="button" class="btn btn-light" onClick="SecMin()" value="Minutes">
+			<input type="button" class="btn btn-light"onClick="SecHr()" value="Hours">
+			<input type="button" class="btn btn-light" onClick="SecDt()" value="Days">
+		</td>
+	</tr>
+	
+		<tr align="center">
+		<td><h1><b>𝐌𝐢𝐧𝐮𝐭𝐞𝐬 !</b></h1>
+			<p><input type="text" id="minutes"></p>
+			<input type="button" class="btn btn-light" onClick="MinSec()" value="Seconds">
+			<input type="button" class="btn btn-light"onClick="MinHr()" value="Hours">
+			<input type="button" class="btn btn-light" onClick="MinDt()" value="Days">
+		</td>
+	</tr>
+
+	</tr>
+<tr align="center">
+		<td><h1><b>𝐇𝐨𝐮𝐫𝐬 !</b></h1>
+			<p><input type="text" id="hours"></p>
+			<input type="button" class="btn btn-light"onClick="HrSec()" value="Seconds">
+			<input type="button" class="btn btn-light"onClick="HrMin()" value="Minutes">
+			<input type="button" class="btn btn-light" onClick="HrDt()" value="Days">
+		</td>
+	</tr>
+	<tr align="center">
+		<td><h1><b>𝐃𝐚𝐲𝐬 !</b></h1>
+			<p><input type="text" id="days"></p>
+			<input type="button" class="btn btn-light"onClick="DtSec()" value="Seconds">
+			<input type="button" class="btn btn-light" onClick="DtMin()" value="Minutes">
+			<input type="button" class="btn btn-light"onClick="DtHr()" value="Hours">
+		</td>
+	</tr>
+</table>
+<hr>
+<hr>
+<h1 style="color: #B4A0E5"><font style="font-size: 50px"><b>𝐓𝐈𝐌𝐄 𝐂𝐎𝐍𝐕𝐄𝐑𝐓𝐄𝐑</b></font></h1>
+<p style="color: #B4A0E5">A website wherein you can convert time!</p>
+<img src="clock.png" width="150" height="160">
+</center>
+</body>
+<script type="text/javascript">
+	/*seconds*/
+	function SecMin(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 60;		
+		alert(x / y);
+	}
+	function SecHr(){
+		var x, y
+		x = (document.getElementById('seconds').value);
+		y = 3600;		
+		alert(x / y);
+	}
+
+	function SecDt(){
+		var x, y 
+		x = (document.getElementById('seconds').value);
+		y = 86400;		
+		alert(x / y);
+	}
+	/*mins*/
+	function MinSec(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 60;		
+		alert(x * y);
+	}
+	function MinHr(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 60;		
+		alert(x / y);
+	}
+	function MinDt(){
+		var x, y
+		x = (document.getElementById('minutes').value);
+		y = 1440;		
+		alert(x / y);
+	}
+	/*hrs*/
+function HrSec(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 3600;		
+		alert(x * y);
+	}
+	function HrMin(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 60;		
+		alert(x * y);
+	}
+	function HrDt(){
+		var x, y
+		x = (document.getElementById('hours').value);
+		y = 24;		
+		alert(x / y);
+	}
+	/*days*/
+function DtSec(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 86400;		
+		alert(x * y);
+	}
+	function DtMin(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 1440;		
+		alert(x * y);
+	}
+	function DtHr(){
+		var x, y
+		x = (document.getElementById('days').value);
+		y = 24;		
+		alert(x * y);
+	}
+</script>
+</html>
